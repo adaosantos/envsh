@@ -1,0 +1,44 @@
+{
+  "name": "envsh",
+  "version": "0.0.1",
+  "description": "Validation for your environment variables",
+  "main": "dist/cjs/index.js",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": ["dist"],
+  "scripts": {},
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "author": "Adão Santos <adaodevsantos@gmail.com> (https://github.com/adaosantos)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adaosantos/envsh.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "typescript",
+    "env",
+    "environment",
+    "variables",
+    "deno",
+    "bun",
+    "nodejs"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.1.16",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
